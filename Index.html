@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>sua viagem</title>
+     <style>
+          #demo2{
+               text-align: center;
+               margin-top: 20%;
+               font-size: 100%;
+               font-family: Arial, Helvetica, sans-serif;
+          }
+          button{
+               color: rgb(58, 15, 211);
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               font-size: 100%;
+               background: rgb(244, 245, 243);
+          }
+
+     </style>
+</head>
+<body>
+     <div id="demo2">
+          <h1>Veja o valor do seu frete.</h1>
+          <h3 id="demo"></h3>
+          <button type="button" onclick="precoViajem()">Preço da Viajem</button>
+          
+          <script>
+               function precoViajem(){
+                    km = prompt("Quantos km tem a viajem (ida)");
+                    preco = 3,20;
+                    document.getElementById("demo").innerHTML = "Sua viagem de " + km + " quilometros custa: R$" + km * preco;
+               }
+          </script>
+     </div>
+</body>
+</html>
